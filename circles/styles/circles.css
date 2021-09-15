@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-content: center;
     flex-wrap: wrap;
   }
    
@@ -16,7 +16,7 @@
     box-sizing: border-box;
     border: none;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
     background-color: #03071E;
     display: flex;
     flex-direction: row;
@@ -37,26 +37,32 @@
     background-color: #748CAB;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     display: flex;
-    
+}
+
+.container__first {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
 }
 
 .container__second {
+    flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-content: flex-start;
+    flex-wrap: wrap-reverse;
 }
 
 .container__third {
-    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-content: space-between;
 }
 
 .container__fourth {
     justify-content: space-between;
-    align-items: center;
+    align-content: space-around;
 }
 
 .container__fifth {
     justify-content: center;
-    align-items: center;
+    align-content: center;
 }
